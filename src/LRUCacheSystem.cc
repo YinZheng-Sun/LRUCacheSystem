@@ -58,3 +58,17 @@ void LRUCacheSystem::Release(LRUNode *n) {
     cache_->Release(reinterpret_cast<Cache::Node*>(n));
 }
 
+LRUNode* LRUCacheSystem::Put(LRUNode *block, const std::string s) {
+    if(block == nullptr) {
+        std::cout << "block不存在" << std::endl;
+        return nullptr;
+    }
+
+    if (s.length() > Blocksize) {
+        std::cout << "不能超过单个Block的大小:" << Blocksize << "bytes" << std::endl;
+        return nullptr;
+    }
+    Cache::Node *n = cache_->Insert(block->key(), s.data(), s.length(), nullptr);
+    return reinterpret_cast<LRUNode*>(n);
+}
+

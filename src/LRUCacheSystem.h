@@ -31,6 +31,8 @@ public:
     LRUCacheSystem(std::string filepath);
     ~LRUCacheSystem();
     LRUNode* Seek(const uint32_t block_id);
+    LRUNode* Put(LRUNode *block, const std::string s);
+
     void Release(LRUNode *n);
     LRUCacheSystem(const LRUCacheSystem&) = delete;
     void operator=(const LRUCacheSystem&) = delete;

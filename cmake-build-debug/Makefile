@@ -48,10 +48,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/sunyinzheng/CLionProjects/LRUCache_2
+CMAKE_SOURCE_DIR = /Users/sunyinzheng/CLionProjects/LRUCacheSystem
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/sunyinzheng/CLionProjects/LRUCache_2/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/sunyinzheng/CLionProjects/LRUCacheSystem/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/sunyinzheng/CLionProjects/LRUCache_2/cmake-build-debug/CMakeFiles /Users/sunyinzheng/CLionProjects/LRUCache_2/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/sunyinzheng/CLionProjects/LRUCacheSystem/cmake-build-debug/CMakeFiles /Users/sunyinzheng/CLionProjects/LRUCacheSystem/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/sunyinzheng/CLionProjects/LRUCache_2/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/sunyinzheng/CLionProjects/LRUCacheSystem/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -111,17 +111,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named LRUCache_2
+# Target rules for targets named LRUCacheSystem
 
 # Build rule for target.
-LRUCache_2: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 LRUCache_2
-.PHONY : LRUCache_2
+LRUCacheSystem: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 LRUCacheSystem
+.PHONY : LRUCacheSystem
 
 # fast build rule for target.
-LRUCache_2/fast:
-	$(MAKE) -f CMakeFiles/LRUCache_2.dir/build.make CMakeFiles/LRUCache_2.dir/build
-.PHONY : LRUCache_2/fast
+LRUCacheSystem/fast:
+	$(MAKE) -f CMakeFiles/LRUCacheSystem.dir/build.make CMakeFiles/LRUCacheSystem.dir/build
+.PHONY : LRUCacheSystem/fast
 
 Murmur3/Murmur3.o: Murmur3/Murmur3.cc.o
 
@@ -129,7 +129,7 @@ Murmur3/Murmur3.o: Murmur3/Murmur3.cc.o
 
 # target to build an object file
 Murmur3/Murmur3.cc.o:
-	$(MAKE) -f CMakeFiles/LRUCache_2.dir/build.make CMakeFiles/LRUCache_2.dir/Murmur3/Murmur3.cc.o
+	$(MAKE) -f CMakeFiles/LRUCacheSystem.dir/build.make CMakeFiles/LRUCacheSystem.dir/Murmur3/Murmur3.cc.o
 .PHONY : Murmur3/Murmur3.cc.o
 
 Murmur3/Murmur3.i: Murmur3/Murmur3.cc.i
@@ -138,7 +138,7 @@ Murmur3/Murmur3.i: Murmur3/Murmur3.cc.i
 
 # target to preprocess a source file
 Murmur3/Murmur3.cc.i:
-	$(MAKE) -f CMakeFiles/LRUCache_2.dir/build.make CMakeFiles/LRUCache_2.dir/Murmur3/Murmur3.cc.i
+	$(MAKE) -f CMakeFiles/LRUCacheSystem.dir/build.make CMakeFiles/LRUCacheSystem.dir/Murmur3/Murmur3.cc.i
 .PHONY : Murmur3/Murmur3.cc.i
 
 Murmur3/Murmur3.s: Murmur3/Murmur3.cc.s
@@ -147,7 +147,7 @@ Murmur3/Murmur3.s: Murmur3/Murmur3.cc.s
 
 # target to generate assembly for a file
 Murmur3/Murmur3.cc.s:
-	$(MAKE) -f CMakeFiles/LRUCache_2.dir/build.make CMakeFiles/LRUCache_2.dir/Murmur3/Murmur3.cc.s
+	$(MAKE) -f CMakeFiles/LRUCacheSystem.dir/build.make CMakeFiles/LRUCacheSystem.dir/Murmur3/Murmur3.cc.s
 .PHONY : Murmur3/Murmur3.cc.s
 
 main.o: main.cpp.o
@@ -156,7 +156,7 @@ main.o: main.cpp.o
 
 # target to build an object file
 main.cpp.o:
-	$(MAKE) -f CMakeFiles/LRUCache_2.dir/build.make CMakeFiles/LRUCache_2.dir/main.cpp.o
+	$(MAKE) -f CMakeFiles/LRUCacheSystem.dir/build.make CMakeFiles/LRUCacheSystem.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -165,7 +165,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	$(MAKE) -f CMakeFiles/LRUCache_2.dir/build.make CMakeFiles/LRUCache_2.dir/main.cpp.i
+	$(MAKE) -f CMakeFiles/LRUCacheSystem.dir/build.make CMakeFiles/LRUCacheSystem.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -174,7 +174,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	$(MAKE) -f CMakeFiles/LRUCache_2.dir/build.make CMakeFiles/LRUCache_2.dir/main.cpp.s
+	$(MAKE) -f CMakeFiles/LRUCacheSystem.dir/build.make CMakeFiles/LRUCacheSystem.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 src/LRUCache.o: src/LRUCache.cc.o
@@ -183,7 +183,7 @@ src/LRUCache.o: src/LRUCache.cc.o
 
 # target to build an object file
 src/LRUCache.cc.o:
-	$(MAKE) -f CMakeFiles/LRUCache_2.dir/build.make CMakeFiles/LRUCache_2.dir/src/LRUCache.cc.o
+	$(MAKE) -f CMakeFiles/LRUCacheSystem.dir/build.make CMakeFiles/LRUCacheSystem.dir/src/LRUCache.cc.o
 .PHONY : src/LRUCache.cc.o
 
 src/LRUCache.i: src/LRUCache.cc.i
@@ -192,7 +192,7 @@ src/LRUCache.i: src/LRUCache.cc.i
 
 # target to preprocess a source file
 src/LRUCache.cc.i:
-	$(MAKE) -f CMakeFiles/LRUCache_2.dir/build.make CMakeFiles/LRUCache_2.dir/src/LRUCache.cc.i
+	$(MAKE) -f CMakeFiles/LRUCacheSystem.dir/build.make CMakeFiles/LRUCacheSystem.dir/src/LRUCache.cc.i
 .PHONY : src/LRUCache.cc.i
 
 src/LRUCache.s: src/LRUCache.cc.s
@@ -201,7 +201,7 @@ src/LRUCache.s: src/LRUCache.cc.s
 
 # target to generate assembly for a file
 src/LRUCache.cc.s:
-	$(MAKE) -f CMakeFiles/LRUCache_2.dir/build.make CMakeFiles/LRUCache_2.dir/src/LRUCache.cc.s
+	$(MAKE) -f CMakeFiles/LRUCacheSystem.dir/build.make CMakeFiles/LRUCacheSystem.dir/src/LRUCache.cc.s
 .PHONY : src/LRUCache.cc.s
 
 src/LRUCacheSystem.o: src/LRUCacheSystem.cc.o
@@ -210,7 +210,7 @@ src/LRUCacheSystem.o: src/LRUCacheSystem.cc.o
 
 # target to build an object file
 src/LRUCacheSystem.cc.o:
-	$(MAKE) -f CMakeFiles/LRUCache_2.dir/build.make CMakeFiles/LRUCache_2.dir/src/LRUCacheSystem.cc.o
+	$(MAKE) -f CMakeFiles/LRUCacheSystem.dir/build.make CMakeFiles/LRUCacheSystem.dir/src/LRUCacheSystem.cc.o
 .PHONY : src/LRUCacheSystem.cc.o
 
 src/LRUCacheSystem.i: src/LRUCacheSystem.cc.i
@@ -219,7 +219,7 @@ src/LRUCacheSystem.i: src/LRUCacheSystem.cc.i
 
 # target to preprocess a source file
 src/LRUCacheSystem.cc.i:
-	$(MAKE) -f CMakeFiles/LRUCache_2.dir/build.make CMakeFiles/LRUCache_2.dir/src/LRUCacheSystem.cc.i
+	$(MAKE) -f CMakeFiles/LRUCacheSystem.dir/build.make CMakeFiles/LRUCacheSystem.dir/src/LRUCacheSystem.cc.i
 .PHONY : src/LRUCacheSystem.cc.i
 
 src/LRUCacheSystem.s: src/LRUCacheSystem.cc.s
@@ -228,7 +228,7 @@ src/LRUCacheSystem.s: src/LRUCacheSystem.cc.s
 
 # target to generate assembly for a file
 src/LRUCacheSystem.cc.s:
-	$(MAKE) -f CMakeFiles/LRUCache_2.dir/build.make CMakeFiles/LRUCache_2.dir/src/LRUCacheSystem.cc.s
+	$(MAKE) -f CMakeFiles/LRUCacheSystem.dir/build.make CMakeFiles/LRUCacheSystem.dir/src/LRUCacheSystem.cc.s
 .PHONY : src/LRUCacheSystem.cc.s
 
 src/hashtable.o: src/hashtable.cc.o
@@ -237,7 +237,7 @@ src/hashtable.o: src/hashtable.cc.o
 
 # target to build an object file
 src/hashtable.cc.o:
-	$(MAKE) -f CMakeFiles/LRUCache_2.dir/build.make CMakeFiles/LRUCache_2.dir/src/hashtable.cc.o
+	$(MAKE) -f CMakeFiles/LRUCacheSystem.dir/build.make CMakeFiles/LRUCacheSystem.dir/src/hashtable.cc.o
 .PHONY : src/hashtable.cc.o
 
 src/hashtable.i: src/hashtable.cc.i
@@ -246,7 +246,7 @@ src/hashtable.i: src/hashtable.cc.i
 
 # target to preprocess a source file
 src/hashtable.cc.i:
-	$(MAKE) -f CMakeFiles/LRUCache_2.dir/build.make CMakeFiles/LRUCache_2.dir/src/hashtable.cc.i
+	$(MAKE) -f CMakeFiles/LRUCacheSystem.dir/build.make CMakeFiles/LRUCacheSystem.dir/src/hashtable.cc.i
 .PHONY : src/hashtable.cc.i
 
 src/hashtable.s: src/hashtable.cc.s
@@ -255,7 +255,7 @@ src/hashtable.s: src/hashtable.cc.s
 
 # target to generate assembly for a file
 src/hashtable.cc.s:
-	$(MAKE) -f CMakeFiles/LRUCache_2.dir/build.make CMakeFiles/LRUCache_2.dir/src/hashtable.cc.s
+	$(MAKE) -f CMakeFiles/LRUCacheSystem.dir/build.make CMakeFiles/LRUCacheSystem.dir/src/hashtable.cc.s
 .PHONY : src/hashtable.cc.s
 
 # Help Target
@@ -266,7 +266,7 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... LRUCache_2"
+	@echo "... LRUCacheSystem"
 	@echo "... Murmur3/Murmur3.o"
 	@echo "... Murmur3/Murmur3.i"
 	@echo "... Murmur3/Murmur3.s"

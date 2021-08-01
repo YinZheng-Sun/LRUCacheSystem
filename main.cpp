@@ -80,22 +80,33 @@ void* test(LRUCacheSystem *s)
 int main(int argc, char **argv) {
 //    const size_t kCacheCapacity = 10*1024;
     LRUCacheSystem *s = new LRUCacheSystem("/Users/sunyinzheng/lru.txt");
-    int count = 0;
-    clock_t start,end;
-    start = clock();
-    std::thread t1(test,std::ref(s));
-    std::thread t2(test,std::ref(s));
-    std::thread t3(test,std::ref(s));
-    std::thread t4(test,std::ref(s));
-    std::thread t5(test,std::ref(s));
-    std::thread t6(test,std::ref(s));
-    std::thread t7(test,std::ref(s));
-    std::thread t8(test,std::ref(s));
+    LRUNode *n = s->Seek(1);
+    std::cout << (char *) n->value << std::endl;
+    s->Release(n);
 
-    t1.join();
-    t2.join();t3.join();t4.join();t5.join();t6.join();t7.join();t8.join();
-    end = clock();
-    cout<<"time = "<<double(end-start)/CLOCKS_PER_SEC<<"s"<<endl;
-    delete s;
+    LRUNode *n2 = s->Put(n,"wowoefa");
+    std::cout << (char *) n2->value << std::endl;
+    s->Release(n2);
+       
+    LRUNode *n3 = s->Seek(1);
+    std::cout << (char *) n3->value << std::endl;
+    s->Release(n3);
+//    int count = 0;
+//    clock_t start,end;
+//    start = clock();
+//    std::thread t1(test,std::ref(s));
+//    std::thread t2(test,std::ref(s));
+//    std::thread t3(test,std::ref(s));
+//    std::thread t4(test,std::ref(s));
+//    std::thread t5(test,std::ref(s));
+//    std::thread t6(test,std::ref(s));
+//    std::thread t7(test,std::ref(s));
+//    std::thread t8(test,std::ref(s));
+
+//    t1.join();
+//    t2.join();t3.join();t4.join();t5.join();t6.join();t7.join();t8.join();
+//    end = clock();
+//    cout<<"time = "<<double(end-start)/CLOCKS_PER_SEC<<"s"<<endl;
+//    delete s;
     return 0;
 }
