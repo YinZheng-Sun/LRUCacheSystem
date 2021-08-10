@@ -47,10 +47,6 @@ LRUNode* LRUCacheSystem::Seek(const uint32_t block_id) {
     fread(pread, sizeof(char),Blocksize,f);
     fclose(f);
     n = cache_->Insert(std::to_string(block_id), pread, Blocksize, nullptr);
-//    assert(n != nullptr);
-//    LRUNode *ln = reinterpret_cast<LRUNode*>(n);
-//    assert(ln->key() == "1");
-//    cache_->Release(n);
     return reinterpret_cast<LRUNode*>(n);
 }
 

@@ -11,9 +11,7 @@ class LRUCache {
 public:
     LRUCache();
     ~LRUCache();
-
     void set_capacity(size_t capacity) { m_capacity = capacity; }
-
     Cache::Node* Insert(const std::string& key, uint32_t hash, const void* value, size_t charge,
                         void (*deleter)(const std::string& key, void* value));
     Cache::Node* Lookup(const std::string &key, uint32_t hash);
@@ -22,12 +20,10 @@ public:
 
 private:
     size_t m_capacity;
-
     // m_mutex protects the following state
     std::mutex m_mutex;
     size_t m_usage;
     size_t m_last_id;
-
     // Dummy head of LRU list.
     // lru.prev is newest entry, lru.next is oldest entry.
     LRUNode m_lru;
